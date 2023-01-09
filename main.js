@@ -50,9 +50,6 @@ const fontSize = document.getElementsByName('radio');
 fontSize.forEach(el => {
 
     el.addEventListener('click', function (e) {
-        // if (e.target) {
-        //     screenBlock.style.fontSize = el.value;
-        // }
         e.target ? screenBlock.style.fontSize = el.value : '';
     })
 });
@@ -67,9 +64,7 @@ select.addEventListener('change', () => {
     selectedFont = screenBlock.style.fontFamily = select.value;
 });
 
-
 // Style ------------------------------------------------------------
-
 
 const bold = document.getElementById('bold');
 bold.addEventListener('change', () => {
