@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Work JS</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="block-screen"></div>
+        <div class="buttons-screen">
+            <button class="edit btn">edit</button>
+            <button class="style btn">style</button>
+        </div>
+
+        <div class="block-empty"></div>
+
+        <div class="block-input">
+            <label for="input-text"></label>
+            <textarea id="input-text" cols="30" rows="10">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </textarea>
+            <div class="buttons-input">
+                <button class="add btn">add</button>
+                <button class="save btn">save</button>
+            </div>
+        </div>
+
+        <div class="block-settings">
+            <div class="block-settings-wrapper">
+                <div class="form-wrapper">
+                    <form>
+                        <p>Font Size:</p>
+                        <input type="radio" name="radio" id="r-12" value="12px" checked>
+                        <label for="r-12">12px</label>
+                        <input type="radio" name="radio" id="r-14" value="14px">
+                        <label for="r-14">14px</label>
+                        <input type="radio" name="radio" id="r-16" value="16px">
+                        <label for="r-16">16px</label>
+                        <input type="radio" name="radio" id="r-18" value="18px">
+                        <label for="r-18">18px</label>
+                        <input type="radio" name="radio" id="r-20" value="20px">
+                        <label for="r-20">20px</label>
+
+                        <p>Font Family:</p>
+                        <select id="ff">
+                            <option>Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospase">monospase</option>
+                            <option value="Lucida Console">Lucida Console</option>
+                            <option value="Arial">Arial</option>
+                        </select>
+
+                        <p>Colors:</p>
+                        <div class="colors-button">
+                            <button class="color-text btn">Color of Text</button>
+                            <button class="bacground-color btn"> Background color</button>
+                        </div>
+
+                        <p>Style:</p>
+                        <input type="checkbox" name="check" id="bold">
+                        <label for="bold" class="l">Bold text</label>
+                        <input type="checkbox" name="check" id="cursive">
+                        <label for="cursive">Cursive text</label>
+
+                    </form>
+                </div>
+
+                <div class="colors-cubic">
+                    <div class="red cub"></div>
+                    <div class="blue cub"></div>
+                    <div class="green cub"></div>
+                    <div class="black cub"></div>
+                    <div class="yellow cub"></div>
+                    <div class="brown cub"></div>
+                    <div class="wheat cub"></div>
+                    <div class="purple cub"></div>
+                    <div class="lightgreen cub"></div>
+                </div>
+                <div class="background-colors-cubic">
+                    <div class="red cub"></div>
+                    <div class="blue cub"></div>
+                    <div class="green cub"></div>
+                    <div class="black cub"></div>
+                    <div class="yellow cub"></div>
+                    <div class="brown cub"></div>
+                    <div class="wheat cub"></div>
+                    <div class="purple cub"></div>
+                    <div class="lightgreen cub"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="block-choose">
+            <form>
+                <h3>Choose what you want:</h3>
+                <input type="radio" name="radio" id="radio-table" value="table" checked>
+                <label for="table">table</label>
+                <input type="radio" name="radio" id="radio-list" value="list" checked>
+                <label for="list">list</label>
+
+                <div class="list-wrapper">
+                   <div>
+                    <label for="count-li">Count Li:</label>
+                    <input type="text" id="count-li" value="" placeholder="Count Li:">
+                   </div>
+                   <div>
+                    <label for="type-of-marks">Type of marks:</label>
+                    <select id="type-of-marks">
+                       <option value="circle">circle</option>
+                       <option value="disc">disc</option>
+                       <option value="square">square</option>
+                    </select>
+                   </div>
+                   <button class="create-list btn">Create list</button>
+                </div>
+            </form>
+
+            <form class="table-settings">
+
+                <br>
+                <label for="tr">Count TR:</label>
+                <input type="text" name="count" id="tr" value="">
+                <br>
+                <label for="td">Count TD:</label>
+                <input type="text" name="count" id="td" value="">
+
+                <h4>Add style to your table:</h4>
+
+                <br>
+                <label for="td-width">Width of TD:</label>
+                <input type="text" name="count" id="td-width" value="" placeholder="Width of TD:">
+                <br>
+                <label for="td-hight">Height of TD:</label>
+                <input type="text" name="count" id="td-height" value="" placeholder="Height of TD:">
+
+                <br>
+                <label for="width-border">Width of border:</label>
+                <input type="text" name="count" id="width-border" value="" placeholder="Width:">
+
+                <label for="type-border">Tipe of border:</label>
+                <select id="type-border">
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="double">double</option>
+                    <option value="dashed">dashed</option>
+                    <option value="ridge">ridge</option>
+                </select>
+
+                <label for="color-border">Tipe of border:</label>
+                <select id="color-border">
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                </select>
+
+                <button class="create-table btn">Create table</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
